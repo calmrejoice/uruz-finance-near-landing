@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       <Flex height="70vh" flexDir="row">
         <Flex flex={1} flexDir="column" justifyContent="center" height="100%">
           <Spacer />
-          <Heading>Decentralized borrow and lending protocol AURORA</Heading>
+          <Heading>Decentralized borrow and lending protocol on Aurora</Heading>
           <Text mt="6">
             Simple and powerful community-driven finance for everyone.
           </Text>
