@@ -17,6 +17,7 @@ import { GiMeepleGroup } from "react-icons/gi";
 
 import animation from "@assets/animation.json";
 import { FeatureCard } from "@components/FeatureCard";
+import { config } from "config";
 
 const Home: NextPage = () => {
   return (
@@ -25,7 +26,7 @@ const Home: NextPage = () => {
       <Flex height="70vh" flexDir="row">
         <Flex flex={1} flexDir="column" justifyContent="center" height="100%">
           <Spacer />
-          <Heading>Decentralized borrow and lending protocol on TRON</Heading>
+          <Heading>Decentralized borrow and lending protocol AURORA</Heading>
           <Text mt="6">
             Simple and powerful community-driven finance for everyone.
           </Text>
@@ -34,7 +35,7 @@ const Home: NextPage = () => {
             <Button
               variant="outline"
               as="a"
-              href="https://app.uruz.finance"
+              href={config.appLink}
               target="_blank"
             >
               Launch App
@@ -60,20 +61,20 @@ const Home: NextPage = () => {
           label="decentralized"
         />
         <FeatureCard
-          title="TRC-20"
-          description="All Uruz Protocol assets are bound by the TRC-20 standard."
+          title="ERC-20"
+          description="All Uruz Protocol assets are bound by the ERC-20 standard."
           icon={BsShieldFillCheck}
-          label="trc-20"
+          label="erc-20"
         />
         <FeatureCard
           title="Scalable"
-          description="Built on TRON for fast, secure, and low cost transactions."
+          description="Built on Aurora for fast, secure, and low cost transactions."
           icon={IoScale}
           label="scalable"
         />
       </HStack>
 
-      <Image src="/tron-hackathon-banner.jpg" borderRadius="xl" />
+      <Image src="/metabuild-3-banner.png" borderRadius="xl" />
     </Flex>
   );
 };

@@ -6,6 +6,7 @@ import {
   Text,
   useColorMode,
 } from "@chakra-ui/react";
+import { config } from "config";
 import { FaDiscord, FaGithub, FaTelegram } from "react-icons/fa";
 import { SiGitbook } from "react-icons/si";
 
@@ -25,7 +26,7 @@ export const Header = () => {
         <SocialIcon icon={FaTelegram} label="telegram" />
         {/* <Button onClick={() => setColorMode("dark")}>Dark</Button> */}
       </HStack>
-      <Button as="a" href="https://app.uruz.finance" target="_blank">
+      <Button as="a" href={config.appLink} target="_blank">
         Launch App
       </Button>
     </Flex>
